@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+main{
+    padding: 0 16px;
+    width: 375px;
+    margin: auto;
+}
+
+.start{
+   all: unset;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 28px;
+   border-radius: 28px;
+   background-color: #13183F;
+   color: #FFFFFF;
+   padding:9px 24px 11px ;
+}
+
+.general img{
+    max-width: 100%;
+}
+
+
+h1{
+    font-size: 40px;
+    font-weight: 800;
+    color:#13183F ;
+    margin-top: 22px;
+
+}
+
+.general p{
+    font-size: 16px;
+    font-weight: 500;
+    color:#83869a ;
+    line-height: 26px;
+    margin-top: 26px;
+}
+
+.general button{
+    background: var(--Gradient-1, linear-gradient(180deg , #ff6f48 0%, #f02aa6 100%));
+    margin-top: 24px;
+    border-radius: 31.5px;
+}
+
+.popular{
+    background: var(--Gradient-1, linear-gradient(180deg , #ff6f48 0%, #f02aa6 100%));
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    color:#FFFFFF ;
+    line-height: 32px;
+    padding: 24px 29px 32px 28px;
+}
+br{
+    display: none;
+}
+
+.courses{
+padding: 0 16px;
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+}
+
+.course{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+    position: relative;
+    padding: 56px 28px 32px;
+}
+
+.course img{
+    top: -28px;
+    position: absolute;
+}
+
+.course h2{
+    margin: 0 0 16px 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #13183f;
+}
+
+.course p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    color: #83869a;
+}
+
+.course button{
+    all: unset;
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.56;
+    color: #f74780;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 16px;
+    background: #13183f;
+    margin-top: 80px;
+}
+
+footer .start{
+    background: linear-gradient(to bottom, #4851ff, #f02aa6);
+}
+
+@media screen and (min-width:768px) {
+
+    body{
+        background-image: url(./image/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position: top  right ;
+    }
+    
+    header{
+        padding: 31px 39px;
+    }
+
+    .start{
+        padding: 15px 37px;
+    }
+
+    main{
+        width: 768px;
+        padding: 0 39px;
+    }
+
+    .general{
+        width: 398px;
+    }
+
+    .general img{
+        display: none;
+    }
+
+    .courses{
+        margin-top: 210px;
+        gap: 56px 10px;
+        padding: 0 0 0 0;
+    }
+
+    .popular{
+        padding: 56px 21px 139px 32px;
+    }
+
+
+    .course, .popular{
+        width: 340px;
+    }
+
+    footer{
+        padding: 36px 39px;
+        margin-top: 83px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    body{
+        background-image: url(./image/image-hero-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top  right -118px;
+    }
+    
+    header{
+        padding: 24px 165px;
+    }
+
+    .start{
+        padding: 14px 31px 14px 32px;
+    }
+
+    header button:hover{
+        background-color: #666ca3;
+    }
+
+    h1{
+        margin-top: 0;
+        font-size: 56px;
+    }
+
+    .general p{
+        font-size: 18px;
+        margin-top: 29px;
+    }
+
+    .general button{
+        margin-top: 40px;
+    }
+
+    .general button:hover{
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, #ff6f48, #f02aa6);
+    }
+
+    main{
+        width: 1440px;
+        margin-top: 185px;
+        padding: 0 165px;
+    }
+
+    .general{
+        width: 457px;
+    }
+
+    .general img{
+        display: none;
+    }
+
+    .courses{
+        margin-top: 250px;
+        gap: 80px 30px;
+    }
+    .popular{
+        padding: 64px 32px 138px ;
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    br{
+        display: block;
+    }
+
+    .course, .popular{
+        width: 350px;
+        border-radius: 15px;
+    }
+
+    .course{
+        padding: 64px 32px 40px;
+    }
+
+    .course h2{
+        font-size: 24px;
+    }
+
+    .course p{
+        font-size: 18px;
+        margin-top: 24px;
+    }
+
+    .course button:hover{
+        color: #ffa7c3;
+    }
+
+    footer{
+        padding: 32px 165px;
+        margin-top: 140px;
+    }
+    
+    footer .start:hover{
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(to bottom, #4851ff -62%, #f02aa6);
+    }
+}
